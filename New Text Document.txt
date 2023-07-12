@@ -1,0 +1,51 @@
+Q1.What is the difference between Compiler and Interpreter
+ Ans--
+-->A compiler translates the entire source code into machine code or bytecode before execution, while an interpreter processes the code line by line during runtime.
+->Compilers generally produce faster-running programs, while interpreters have a slower execution speed.
+-->Compilers generate an executable file that can be executed multiple times without recompilation, while interpreters execute the code directly without generating a separate file.
+-->Compiled programs are often platform-dependent, while interpreted programs are more portable.
+
+
+Q2.What is the difference between JDK, JRE, and JVM?
+JDK (Java Development Kit): JDK is a software development kit that provides tools necessary for developing and compiling Java applications. It includes the Java compiler, libraries, and development tools needed to create and debug Java programs. The JDK is used by developers to write and compile Java code.
+-----------------------------------------------------------------------------------------------------------------------
+JRE (Java Runtime Environment): JRE is a runtime environment that allows you to run Java applications on your computer. It includes the Java Virtual Machine (JVM) and a set of libraries and components required for executing Java programs. The JRE is used by end-users who only need to run Java applications and do not need the development tools provided by the JDK.
+---------------------------------------------------------------------------------------
+JVM (Java Virtual Machine): JVM is a virtual machine that executes Java bytecode. It is a key component of the Java platform and provides an environment for running Java programs. The JVM translates bytecode into machine code that can be understood and executed by the underlying operating system. It provides memory management, garbage collection, and other runtime services necessary for executing Java applications.
+
+Q4.What is JIT compiler?
+JIT (Just-In-Time) compiler dynamically translates frequently executed code into optimized machine code at runtime, improving the performance of programs. It balances the benefits of interpreted code (faster startup, easier debugging) with the speed of compiled code by optimizing critical sections of the code.
+
+
+Q5.What are the various access specifiers in Java?
+In Java, the access specifiers control the visibility and accessibility of classes, methods, and variables. The access specifiers are: public (accessible from anywhere), protected (accessible within the same package and subclasses), default (accessible within the same package), and private (accessible only within the same class).
+
+
+Q6.What is a compiler in Java?
+In Java, a compiler is a software tool that translates human-readable Java source code into machine-readable bytecode. The compiler checks for syntax and semantic errors, and if the code is valid, it generates an executable file that can be run on a Java Virtual Machine (JVM).
+
+
+Q7.Explain the types of variables in Java?
+Local variables are declared within methods, constructors, or blocks and have limited scope.
+Instance variables are declared within a class but outside any method and are associated with instances (objects) of the class.
+Class variables (static variables) are shared among all instances of a class and are declared with the "static" keyword.
+
+
+Q8.What are the Datatypes in Java?
+Java has primitive data types (boolean, byte, short, int, long, float, double, char) for basic values, reference data types (classes, arrays, interfaces) for complex objects, and special types like String, Enum, and wrapper classes for additional functionality.
+
+
+Q9.What are the identifiers in java?
+In Java, identifiers are names used to identify variables, methods, classes, interfaces, and other program elements. They must start with a letter, underscore, or dollar sign, followed by letters, digits, underscores, or dollar signs. Identifiers are case-sensitive and cannot be Java keywords or reserved words.
+
+
+Q10.Explain the architecture of JVM 
+The JVM (Java Virtual Machine) is a virtual machine that executes Java bytecode. It consists of three main components: Class Loader, Execution Engine, and Runtime Data Area. The Class Loader loads classes into memory, the Execution Engine executes bytecode, and the Runtime Data Area stores runtime information like heap and stack
+
+
+
+
+
+
+
+
