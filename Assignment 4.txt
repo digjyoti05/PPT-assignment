@@ -1,0 +1,57 @@
+Q1. Write a program to show Interface Example in java?
+interface Animal {
+    void makeSound(); 
+}
+Q2.Write a program a Program with 2 concrete method and 2 abstract method in java ?
+abstract class Shape {
+    // Abstract methods
+    public abstract void draw();
+    public abstract void calculateArea();
+Q3.Write a program  to show the use of functional interface in java?
+interface Calculator {
+    int calculate(int a, int b);
+}
+
+public class FunctionalInterface {
+    public static void main(String[] args) {
+      
+        Calculator addition = (a, b) -> a + b;
+        System.out.println("Addition: " + addition.calculate(5, 3));
+
+        Calculator subtraction = (a, b) -> a - b;
+        System.out.println("Subtraction: " + subtraction.calculate(10, 4));
+    }
+}
+Q4.What is an interface in Java?
+1-Interfaces are declared using the interface keyword.
+2-Methods declared in an interface are by default public and abstract (prior to Java 8).
+3-Interfaces can have constant fields, which are public, static, and final by default.
+4-A class can implement multiple interfaces.
+5-Interfaces support multiple inheritance, allowing a class to inherit from multiple interfaces.
+6-Starting from Java 8, interfaces can also have default methods and static methods with implementations.
+7-Interfaces are used for achieving abstraction, code reusability, and defining contracts for classes to implement.
+
+Q5.What is the use of interface in Java?
+Interfaces in Java are used to achieve abstraction, define contracts for classes to implement, and provide a common behavior. They support code reusability, multiple inheritance, and polymorphism. Interfaces promote loose coupling and facilitate the creation of modular and flexible software systems.
+
+Q6.What is the lambda expression of Java 8?
+In Java 8, lambda expressions were introduced as a concise way to represent functional interfaces (interfaces with a single abstract method). A lambda expression is an anonymous function that allows you to write code in a more compact and expressive manner. It omits the need for writing a full method declaration, reducing boilerplate code. Lambda expressions facilitate the use of functional programming concepts, such as passing behavior as arguments and enabling functional interfaces to be used with ease in Java programming.
+
+Q7.Can you pass lambda expressions to a method? When?
+Yes, in Java, lambda expressions can be passed as arguments to methods. This is possible when the method parameter is of a functional interface type, i.e., an interface with a single abstract method
+By passing a lambda expression as an argument, you can provide a concise implementation of the abstract method directly at the call site, without the need to create a separate class or write a lengthy method implementation.
+
+Q8.What is the functional interface in Java ?
+In Java 8, a functional interface is an interface that has exactly one abstract method. It is also known as a Single Abstract Method (SAM) type or an interface with a functional signature. Functional interfaces are used to support lambda expressions and method references, providing a way to write concise and expressive code. Java 8 introduced the @functionalInterface annotation to explicitly mark an interface as functional and prevent accidental addition of multiple abstract methods.
+
+Q9.What is the benefit of lambda expressions in Java 8?
+Lambda expressions in Java 8 provide a concise and expressive way to represent behavior, reducing boilerplate code and improving code readability. They enable functional programming concepts, simplify API design, support parallel processing, and offer efficient memory usage. Lambda expressions enhance productivity and allow for more flexible and modular code development.
+
+Q10.Is it mandatory for a lambda expression to have parameters?
+No, it is not mandatory for a lambda expression in Java to have parameters. Lambda expressions can be parameterless or have one or more parameters based on the functional interface they are associated with. If a lambda expression doesn't require any input parameters, you can omit them from the lambda expression syntax. However, if the functional interface expects parameters, you must include them in the lambda expression declaration.
+
+
+
+
+
+
