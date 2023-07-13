@@ -1,5 +1,5 @@
 Q1. What are the Conditional Operators in Java?
-Conditional Operators  are 3 types 1- And Operator(&&) 2-Or Operator(||) 3-Ternary operator(!)
+Conditional Operators  are 3 types 1- And Operator(&&) 2-Or Operator(||) 3-Ternary operator(?)
 
 Q2. What are the types of operators based on the number of operands?
 These operators work with a single operand. Examples include the increment (++), decrement (--), logical negation (!), and unary minus (-) operators.
