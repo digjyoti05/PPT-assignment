@@ -1,0 +1,36 @@
+Q1.What is Collection in Java?
+In Java, a collection is a framework that provides a set of interfaces, classes, and algorithms to store and manipulate groups of objects. It is used to organize and manage groups of related elements as a single unit. Collections offer a more flexible and efficient alternative to arrays, allowing dynamic resizing, automatic memory management, and a wide range of operations like adding, removing, searching, and sorting elements.
+
+Q2. Differentiate between Collection and collections in the context of Java.
+In Java, "Collection" (capitalized) refers to the Java Collections Framework, which is a built-in framework that provides interfaces and classes to work with groups of objects. It represents the entire framework and its components.
+On the other hand, "collections" (lowercase) generally refers to instances or objects of the classes in the Collection framework. It specifically refers to the actual collections or data structures, such as lists, sets, maps, etc., that are created and used to store and manipulate elements in Java programs.
+
+Q3. What are the advantages of the Collection framework?
+The advantages of Collection is Reusability,Abstraction and Standardization,Performance and Efficiency,Type Safety,Integration with Language Features.
+
+Q4.Explain the various interfaces used in the Collection framework.
+Collection Freamwork Provide list, set,queue,Sortedset,SortedMap
+
+Q5.Differentiate between List and Set in Java.
+---->>>Duplication: List allows duplicate elements, while Set does not. In a List, elements can occur multiple times, whereas in a Set, each element is unique.
+----->>>Ordering: List maintains the insertion order of elements, meaning elements are stored in the order they are added. Set does not guarantee a specific order of elements.
+---->>>Indexing: List provides indexed access to elements, allowing operations like getting, setting, and removing elements by their index. Set does not provide direct indexed access.
+--->Equality: List considers two elements equal if they have the same value. Set considers elements equal if their hashCode and equals methods return true.
+--->>Implementations: Common List implementations include ArrayList and LinkedList, while HashSet and TreeSet are common Set implementations.
+
+Q6.What is the Differentiate between Iterator and ListIterator in Java.
+Iterator and ListIterator are both interfaces in Java used to traverse elements in a collection, but they have distinct differences. Iterator allows only forward iteration and supports basic operations like hasNext() and next(). In contrast, ListIterator, specific to List implementations, enables bidirectional traversal and offers additional methods like hasPrevious(), previous(), and the ability to modify elements with add(), set(), and remove(). ListIterator provides more functionality but is limited to List collections, while Iterator can be used with various Collection types.
+
+Q7.What is the Differentiate between Comparable and Comparator
+Comparable: The Comparable interface is implemented by a class to define its natural ordering. The compareTo() method is used to compare objects and determine their relative order. The natural ordering is intrinsic to the object itself.
+
+Comparator: The Comparator interface provides a separate class to define custom comparison logic for objects. It requires implementing the compare() method to compare two objects. Comparators offer flexibility to define multiple comparison rules for objects, separate from their inherent ordering.
+
+Q8.What is collision in HashMap?
+In a HashMap, a collision occurs when two or more keys map to the same bucket location. It happens when different keys produce the same hash code or when the hash function distributes elements unevenly across the buckets. When a collision occurs, the HashMap uses a mechanism called chaining or separate chaining to store multiple entries with the same hash code in a linked list within the bucket. This allows multiple entries to coexist in the same bucket and be retrieved correctly based on their keys.
+
+Q9.Distinguish between a hashmap and a Treemap.
+HashMap and TreeMap are implementations of the Map interface in Java. HashMap provides fast performance with constant-time operations but does not guarantee any specific order. It allows null keys and multiple null values. TreeMap, on the other hand, maintains elements in sorted order based on their natural ordering or a custom Comparator. It offers slower performance due to its red-black tree structure but provides logarithmic-time operations. TreeMap does not allow null keys but can have multiple null values. The choice between HashMap and TreeMap depends on the need for ordering, performance requirements, and the presence of null keys in the use case.
+
+Q10.Define LinkedHashMap in Java
+LinkedHashMap in Java is a class that extends HashMap and maintains the order of elements based on the insertion order or the last accessed order. It combines the functionality of a HashMap with a doubly-linked list to provide predictable iteration order. Each entry in the LinkedHashMap maintains a reference to the previous and next entries, allowing efficient traversal. This ordering property makes it suitable for scenarios where the order of insertion or access is significant. LinkedHashMap offers constant-time performance for basic operations and supports null keys and values. It is commonly used when iteration order needs to be preserved along with the benefits of a hash-based data structure.
