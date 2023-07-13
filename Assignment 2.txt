@@ -1,0 +1,70 @@
+Q1. What are the Conditional Operators in Java?
+Conditional Operators  are 3 types 1- And Operator(&&) 2-Or Operator(||) 3-Ternary operator(!)
+
+Q2. What are the types of operators based on the number of operands?
+These operators work with a single operand. Examples include the increment (++), decrement (--), logical negation (!), and unary minus (-) operators.
+
+These operators work with two operands. Examples include arithmetic operators like addition (+), subtraction (-), multiplication (*), division (/), and comparison operators like equal to (==), not equal to (!=), less than (<), greater than (>), etc.
+
+Q3.What is the use of Switch case in Java programming?
+The switch case statement in Java is used to control program flow based on multiple possible values of a variable. It provides a concise and efficient way to handle different cases, improving code readability and maintainability by avoiding repetitive if-else statements.
+
+Q4.What are the conditional Statements and use of conditional statements in Java?
+There are 3 types of conditional Statements 1- if 2-if else 3- Switch Case
+if: It executes a block of code if a given condition is true, otherwise it executes an alternative block of code.
+if else- in if else we can do more coditional thing inside if else  
+switch case: It allows for multiple branching based on different values of a variable or expression.
+
+Q5.What is the syntax of if else statement?
+Syntax of if else Statement is =if(Condition){code inside/}
+
+Q6.How do you compare two strings in Java?
+In Java, you can compare two strings using the equals() method to check for content equality or the compareTo() method to compare lexicographically. equals() is case-sensitive, while compareTo() returns an integer indicating the relationship between the strings.
+
+Q7.What is Mutable String in Java Explain with an example?
+ String Bulider and StringBuffer are  the Mutable String
+
+Q8-Write a program to sort a String Alphabetically
+public class StringSortExample {
+    public static void main(String[] args) {
+        String str = "openai";
+        char[] charArray = str.toCharArray(); 
+        Arrays.sort(charArray);
+        String sortedString = new String(charArray);
+        System.out.println("Original String: " + str);
+        System.out.println("Sorted String: " + sortedString);
+    }
+}
+
+Q9.Write a program to check if the letter 'e' is present in the word 'Umbrella'?
+public class LetterCheckExample {
+    public static void main(String[] args) {
+        String word = "Umbrella";
+        boolean isPresent = false;
+
+        for (int i = 0; i < word.length(); i++) {
+            if (word.charAt(i) == 'e') {
+                isPresent = true;
+                break;
+            }
+        }
+
+        if (isPresent) {
+            System.out.println("The letter 'e' is present in the word 'Umbrella'.");
+        } else {
+            System.out.println("The letter 'e' is not present in the word 'Umbrella'.");
+        }
+    }
+}
+
+Q10.Where exactly is the string constant pool located in the memory?
+In Java, the string constant pool is a part of the Java heap memory. The Java heap is the runtime data area where objects are allocated during the execution of a Java program.
+The string constant pool is implemented as a part of the runtime environment and is managed by the Java Virtual Machine (JVM). It is created and maintained by the JVM during program execution and is accessible to the program for efficient string handling and optimization.
+
+
+
+
+
+
+
+
